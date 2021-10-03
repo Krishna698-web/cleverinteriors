@@ -1,0 +1,22 @@
+input[type="checkbox"]{
+    display: none;
+}
+.hamburger{
+    float: right;
+    display: none;
+    margin: 5px;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.hamburger span{
+    height: 4px;
+    width: 3rem;
+    background: #112;
+    display: block;
+    margin: 5px;
+}
+.hamburger span:nth-child(2){
+    width: 2rem;
+}

@@ -1,0 +1,28 @@
+.btn{
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.3rem 3rem;
+    background: white;
+    border-radius: 3rem;
+    position: relative;
+    color: black;
+    box-shadow: 0 4px 10px slategray;
+    border: none;
+}
+
+.btn::after{
+    content: "";
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 3rem;
+    transition: .3s;
+}
+.btn:hover::after{
+    transform: scale(2);
+    opacity: 0;
+}

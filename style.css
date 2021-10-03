@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url("hamburger.css");
+@import url("button.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Nunito;
+    overflow-x: hidden;
+}
+
+.margin-top{
+    margin-top: 5rem;
+}
+section{
+    width: 100vw;
+}
+/* Header section */
+header{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.411), rgba(0, 0, 255, 0.192)),url("/images/first-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*Section-1: Navbar */
+nav{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 10;
+}
+
+nav a{
+    color: black;
+}
+nav h2{
+    float: left;
+    font-size: 3rem;
+    padding: .5rem 2rem;
+}
+nav h2 span{
+    display: block;
+    font-size: 1.5rem;
+}
+nav ul{
+    position: absolute;
+    top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    padding: 2rem;
+    transition: all .3s;
+    color: black;
+}
+nav ul li a:hover{
+    color: palevioletred;
+}
+
+/* Section-1: mid sec */
+.mid-section{
+    position: sticky;
+    top: 40%;
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+.mid-section h1{
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    animation: animate 3s ease;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-10rem);
+        opacity: 0;
+    }
+}
+
+/* Section-2: Quote */
+.sec-2{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.05)), url("/images/second-img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20rem;
+    font-size: 3.2rem;
+    color: rgb(0, 0, 61);
+}
+
+/* Section-3: Description */
+.sec-3{
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(0, 0, 0, .3)), url("images/third-img.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-sec{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.sec-3 img{
+    height: 30rem;
+    border-radius: .35em;
+    position: absolute; 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0);
+    transition: .5s;
+    padding: 1rem;
+    cursor: pointer;
+}
+.sec-3 img:hover{
+    z-index: 1;
+}
+.sec-3 img:nth-child(1){
+    transform: rotate(-4deg);
+    top: 15%;
+    left: 20%;
+}
+.sec-3 img:nth-child(1):hover{
+    transform: scale(1.1);
+}
+.sec-3 img:nth-child(2):hover{
+    transform: scale(1.1);
+}
+.sec-3 img:nth-child(2){
+    transform: rotate(4deg);
+    top: 45%;
+    left: 30%;
+}
+
+.descp-sec{
+    padding: 2rem;
+    width: 40%;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+.descp-sec h2{
+    font-size: 4rem;   
+}
+.descp-sec {
+    font-size: 2rem;
+}
+
+
+/* Section-4: form */
+.sec-4{
+    background: linear-gradient(rgba(255, 255, 255, 0.308), rgba(0, 0, 255, 0.11)), url("/images/forth-img.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sec-4 form{
+    width: 30%;
+}
+.sec-4 h2{
+    padding: 2rem;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 3px 1rem rgb(0, 0, 0, .5);
+}
+
+.sec-4 .textfield{
+    padding: 2rem;
+    position: relative;
+}
+
+.sec-4 .input{
+    padding: 1rem;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: lightslategray;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.sec-4 .input::placeholder{
+    opacity: 0;
+}
+.sec-4 label{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #212;
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.sec-4 .input:focus ~ label,
+.sec-4 .input:not(:placeholder-shown) ~ label{
+    top: 0rem;
+    font-size: 1.5rem;
+}
+
+.sec-4 .btn{
+    padding: 1rem 5rem;
+    cursor: pointer;
+    z-index: 0;
+} 
+
+/* Section-5:about section */
+.sec-5{
+    padding: 15rem;
+    background: #112;
+    text-align: center;
+}
+.sec-5 h2{
+    font-size: 5rem;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background: lightslategrey;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 360px) and (max-width: 720px){
+    .sec-1{
+        height: 80rem;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    input[type="checkbox"]:checked ~  ul{
+        right: 0;
+    } 
+    nav h2{
+        font-size: 2.5rem;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        right: -60rem;
+        top: 6rem;
+        transition: .5s ease-in;
+        background: white;
+    }
+    nav ul li {
+        padding: 1rem;
+        margin: 4px;
+    }
+    .mid-section h1{
+        font-size: 3rem;
+    }
+    .sec-2{
+        padding: 3rem;
+    }
+    .sec-2 h3{
+        font-size: 2rem;
+    }
+
+    .sec-3{
+        flex-direction: column;
+    }
+
+    .img-sec{
+        width: 100%;
+    }
+    .sec-3 img{
+        height: 20rem;
+    }
+
+    .descp-sec{
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+    .descp-sec h2{
+        font-size: 3rem;   
+    }
+    .descp-sec {
+        font-size: 1.5rem;
+    }
+
+    .sec-4 form{
+        width: 80%;
+    }
+}
