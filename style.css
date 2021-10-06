@@ -147,16 +147,16 @@ nav ul li a:hover{
     top: 15%;
     left: 20%;
 }
+.sec-3 img:nth-child(2){
+    transform: rotate(4deg);
+    top: 45%;
+    left: 30%;
+}
 .sec-3 img:nth-child(1):hover{
     transform: scale(1.1);
 }
 .sec-3 img:nth-child(2):hover{
     transform: scale(1.1);
-}
-.sec-3 img:nth-child(2){
-    transform: rotate(4deg);
-    top: 45%;
-    left: 30%;
 }
 
 .descp-sec{
@@ -299,6 +299,7 @@ nav ul li a:hover{
 
     .sec-3{
         flex-direction: column;
+        height: 100vh;
     }
 
     .img-sec{
@@ -306,6 +307,17 @@ nav ul li a:hover{
     }
     .sec-3 img{
         height: 20rem;
+    }
+    
+    .sec-3 img:nth-child(1){
+        transform: rotate(-4deg);
+        top: 15%;
+        left: 10%;
+    }
+    .sec-3 img:nth-child(2){
+        transform: rotate(4deg);
+        top: 45%;
+        left: 30%;
     }
 
     .descp-sec{
