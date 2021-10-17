@@ -259,7 +259,42 @@ nav ul li a:hover{
 
 
 /* Media Queries */
-@media only screen and (min-width: 360px) and (max-width: 720px){
+@media (min-width: 640px) and (max-width: 940px) {
+    .sec-2{
+        padding: 5rem;
+    }
+    .sec-3{
+        flex-direction: column;
+    }
+    .img-sec{
+        width: 100%;
+    }
+    .sec-3 img{
+        height: 25rem;
+    }
+
+    .sec-3 img:nth-child(1){
+        top: 0%;
+        left: 25%;
+    }
+    .sec-3 img:nth-child(2){
+        top: 30%;
+        left: 40%;
+    }
+
+    .descp-sec{
+        width: 80%;
+        margin-bottom: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .sec-4 form{
+        width: 50%;
+    }
+}
+
+
+@media  (max-width: 640px){
     .sec-1{
         height: 80rem;
     }
@@ -298,36 +333,29 @@ nav ul li a:hover{
 
     .sec-3{
         flex-direction: column;
-        height: 100vh;
     }
 
     .img-sec{
         width: 100%;
     }
     .sec-3 img{
-        height: 15rem;
+        height: 20rem;
     }
     
     .sec-3 img:nth-child(1){
-        transform: rotate(-4deg);
-        top: 15%;
-        left: 10%;
+        left: 15%;
     }
     .sec-3 img:nth-child(2){
-        transform: rotate(4deg);
-        top: 45%;
-        left: 30%;
+        left: 35%;
     }
 
     .descp-sec{
         width: 80%;
         margin-bottom: 5rem;
+        font-size: 1.5rem;
     }
     .descp-sec h2{
         font-size: 3rem;   
-    }
-    .descp-sec {
-        font-size: 1.5rem;
     }
 
     .sec-4 form{
